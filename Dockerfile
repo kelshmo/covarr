@@ -1,8 +1,8 @@
 FROM rocker/rstudio
 
-RUN apt-get update -y/
-&& apt-get install -y dpkg-dev zlib1g-dev libssl-dev libffi-dev/
-&& apt-get install -y curl libcurl4-openssl-dev/
+RUN apt-get update -y\
+&& apt-get install -y dpkg-dev zlib1g-dev libssl-dev libffi-dev\
+&& apt-get install -y curl libcurl4-openssl-dev\
 && R -e "install.packages('biomaRt')"\
 && R -e "install.packages('ComplexHeatmap')"\
 && R -e "install.packages('CovariateAnalysis')"\
