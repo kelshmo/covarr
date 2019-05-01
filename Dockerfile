@@ -15,7 +15,7 @@ RUN apt-get update -y\
 && R -e "install.packages('foreach')"\
 && R -e "install.packages('githubr')"\
 && R -e "install.packages('ggplot2')"\
-&& R -e "install.packages('knitr;)"\
+&& R -e "install.packages('knitr')"\
 && R -e "install.packages('lme4')"\
 && R -e "install.packages('limma')"\
 && R -e "install.packages('plyr')"\
