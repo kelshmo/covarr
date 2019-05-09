@@ -25,6 +25,6 @@ RUN apt-get update -y\
 && R -e "install.packages('statmod')"\
 && R -e "install.packages('stringr')"\
 && R -e "install.packages('synapser', repos = c('http://ran.synapse.org', 'http://cran.fhcrc.org'))"\
-&& R -e "install.packages('tidyr')"
-&& R -e "install.packages('tidyverse')"
+&& R -e "install.packages('tidyr')"\
+&& R -e "install.packages('tidyverse')"\
 && R -e "install.packages('WGCNA')"
