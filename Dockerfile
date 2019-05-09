@@ -15,6 +15,7 @@ RUN apt-get update -y\
 && R -e "install.packages('edgeR')"\
 && R -e "install.packages('foreach')"\
 && R -e "install.packages('githubr')"\
+&& R -e "install.packages('glmnet')"\
 && R -e "install.packages('ggplot2')"\
 && R -e "install.packages('knitr')"\
 && R -e "install.packages('lme4')"\
@@ -25,3 +26,5 @@ RUN apt-get update -y\
 && R -e "install.packages('stringr')"\
 && R -e "install.packages('synapser', repos = c('http://ran.synapse.org', 'http://cran.fhcrc.org'))"\
 && R -e "install.packages('tidyr')"
+&& R -e "install.packages('tidyverse')"
+&& R -e "install.packages('WGCNA')"
