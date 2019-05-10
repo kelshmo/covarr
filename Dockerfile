@@ -6,10 +6,10 @@ RUN apt-get update -y\
 && apt-get install -y git\
 && R -e "install.packages('biomaRt')"\
 && R -e "install.packages('ComplexHeatmap')"\
-&& R -e "install.packages('CovariateAnalysis')"\
 && R -e "install.packages('cqn')"\
 && R -e "install.packages('data.table')"\
 && R -e "install.packages('devtools')"\
+&& R -e "devtools::install_github('th1vairam/CovariateAnalysis@dev')"\
 && R -e "install.packages('doParallel')"\
 && R -e "install.packages('dplyr')"\
 && R -e "install.packages('edgeR')"\
