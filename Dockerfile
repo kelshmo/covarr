@@ -26,4 +26,8 @@ RUN apt-get update -y\
 && R -e "install.packages('stringr')"\
 && R -e "install.packages('synapser', repos = c('http://ran.synapse.org', 'http://cran.fhcrc.org'))"\
 && R -e "install.packages('tidyr')"\
-&& R -e "BiocManager::install('WGCNA')"
+&& R -e "BiocManager::install('WGCNA')"\
+&& R -e "BiocManager::install("sva")"\
+&& R -e "install.packages("ggpubr")"\
+&& R -e "install.packages('R.utils')"\
+&& R -e "install.packages('drake')"
