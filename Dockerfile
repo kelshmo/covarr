@@ -37,3 +37,5 @@ RUN apt-get update -y\
 && R -e "BiocManager::install('IRanges')"\
 && R -e "BiocManager::install('GenomicRanges')"
 
+RUN R -e "BiocManager::install('variancePartition')"
+
