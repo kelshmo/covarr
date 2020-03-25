@@ -38,6 +38,5 @@ RUN apt-get update -y\
 && R -e "BiocManager::install('GenomicRanges')"
 
 RUN R -e "BiocManager::install('variancePartition')"\
-&& R -e "BiocManager::install("WGCNA")"\
 && R -e "install.packages('future')"
 
