@@ -36,8 +36,8 @@ RUN apt-get update -y\
 && R -e "install.packages('config')"\
 && R -e "BiocManager::install('IRanges')"\
 && R -e "BiocManager::install('GenomicRanges')"\
-&& R -e "install.packages('visNetwork')"
-
-RUN R -e "BiocManager::install('variancePartition')"\
-&& R -e "install.packages('future')"
+&& R -e "install.packages('visNetwork')"\
+&& R -e "devtools::install_github('GabrielHoffman/variancePartition')"\
+&& R -e "install.packages('future')"\
+&& R -e "devtools::install_github('GabrielHoffman/mvBIC', repos=BiocManager::repositories())"
 
