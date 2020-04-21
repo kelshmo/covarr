@@ -27,7 +27,7 @@ RUN apt-get update -y\
 && R -e "install.packages('synapser', repos = c('http://ran.synapse.org', 'http://cran.fhcrc.org'))"\
 && R -e "devtools::install_github('Sage-Bionetworks/knit2synapse')"\
 && R -e "install.packages('tidyr')"\
-&& R -e "BiocManager::install('WGCNA')"\
+&& R -e "install.packages('WGCNA')"\
 && R -e "BiocManager::install('sva')"\
 && R -e "install.packages('ggpubr')"\
 && R -e "install.packages('R.utils')"\
@@ -35,7 +35,8 @@ RUN apt-get update -y\
 && R -e "install.packages('R.utils')"\
 && R -e "install.packages('config')"\
 && R -e "BiocManager::install('IRanges')"\
-&& R -e "BiocManager::install('GenomicRanges')"
+&& R -e "BiocManager::install('GenomicRanges')"\
+&& R -e "install.packages('visNetwork')"
 
 RUN R -e "BiocManager::install('variancePartition')"\
 && R -e "install.packages('future')"
