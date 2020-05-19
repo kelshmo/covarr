@@ -39,5 +39,5 @@ RUN apt-get update -y\
 && R -e "install.packages('visNetwork')"\
 && R -e "devtools::install_github('GabrielHoffman/variancePartition')"\
 && R -e "install.packages('future')"\
-&& R -e "devtools::install_github('GabrielHoffman/mvBIC', repos=BiocManager::repositories())"
+&& R -e "devtools::install_github('GabrielHoffman/mvIC', repos=BiocManager::repositories())"
 
