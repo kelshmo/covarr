@@ -6,7 +6,7 @@ RUN apt-get update -y\
 && apt-get install -y git\
 && R -e "install.packages('BiocManager')"\
 && R -e "BiocManager::install('biomaRt')"\
-&& R -e "install.packages('config')"
+&& R -e "install.packages('config')"\
 && R -e "BiocManager::install('ComplexHeatmap')"\
 && R -e "BiocManager::install('cqn')"\
 && R -e "install.packages('data.table')"\
@@ -28,7 +28,7 @@ RUN apt-get update -y\
 && R -e "BiocManager::install('limma')"\
 && R -e "install.packages('magrittr')"\
 && R -e "install.packages('mclust')"\
-&& R -e "devtools::install_github('GabrielHoffman/mvIC', repos=BiocManager::repositories())"
+&& R -e "devtools::install_github('GabrielHoffman/mvIC', repos=BiocManager::repositories())"\
 && R -e "install.packages('psych')"\
 && R -e "install.packages('quantreg')"\
 && R -e "install.packages('RColorBrewer')"\
